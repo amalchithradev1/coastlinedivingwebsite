@@ -9,8 +9,9 @@ class HomePageMobile extends StatefulWidget {
   State<HomePageMobile> createState() => _HomePageMobileState();
 }
 
-class _HomePageMobileState extends State<HomePageMobile> {
+class _HomePageMobileState extends State<HomePageMobile> with SingleTickerProviderStateMixin {
   late VideoPlayerController _controller;
+  late AnimationController _textAnimationController;
 
   @override
   void initState() {
@@ -25,11 +26,17 @@ class _HomePageMobileState extends State<HomePageMobile> {
         _controller.play();
         setState(() {});
       });
+
+    _textAnimationController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 10),
+    )..repeat(reverse: true);
   }
 
   @override
   void dispose() {
     _controller.dispose();
+    _textAnimationController.dispose();
     super.dispose();
   }
 
@@ -38,66 +45,60 @@ class _HomePageMobileState extends State<HomePageMobile> {
       context: context,
       barrierDismissible: true,
       barrierLabel: "Menu",
-      barrierColor: Colors.black.withOpacity(0.7), // dark background overlay
-      transitionDuration: const Duration(milliseconds: 300),
+      barrierColor: Colors.black.withOpacity(0.9), // dark overlay
+      transitionDuration: const Duration(milliseconds: 400),
       pageBuilder: (context, anim1, anim2) {
-        return Align(
-          alignment: Alignment.centerRight,
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.75, // menu width
-            height: MediaQuery.of(context).size.height,
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                colors: [Colors.green, Colors.blue],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-              borderRadius: BorderRadius.circular(16),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  blurRadius: 8,
-                  offset: const Offset(2, 4),
-                ),
-              ],
+        return Scaffold(
+          backgroundColor: Colors.transparent,
+          body: Container(
+            width: double.infinity,
+            height: double.infinity,
+            decoration: const BoxDecoration(
+              // gradient: LinearGradient(
+              //   colors: [Colors.green, Colors.blue],
+              //   begin: Alignment.topLeft,
+              //   end: Alignment.bottomRight,
+              // ),
+              color: Colors.indigo
             ),
             child: SafeArea(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   /// 🔹 Close button
                   Align(
                     alignment: Alignment.topRight,
                     child: IconButton(
-                      icon: const Icon(Icons.close, color: Colors.white, size: 28),
+                      icon: const Icon(Icons.close, color: Colors.white, size: 50),
                       onPressed: () => Navigator.pop(context),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: const Icon(Icons.waves, color: Colors.white, size: 40),
-                  ),
-                  /// 🔹 Logo
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Text(
-                      "Coastline Construction &\nMarine Services",
-                      style: GoogleFonts.b612(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.none
-                      ),
                     ),
                   ),
                   const SizedBox(height: 30),
 
-                  /// 🔹 Menu Items
+                  /// 🔹 Logo
+                  Image.asset(
+                    "assets/images/coastlinedivinglogo.png",
+                    height: 100,
+                    color: Colors.white,
+                  ),
+                  const SizedBox(height: 20),
+
+                  Text(
+                    "Coastline diving &\nEngineering Services",
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.b612(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+
+                  /// 🔹 Full Screen Menu Items
                   _buildMenuItem("Home"),
                   _buildMenuItem("About"),
-                  _buildMenuItem("Service"),
+                  _buildMenuItem("What we Do"),
                   _buildMenuItem("Courses"),
                   _buildMenuItem("Gallery"),
                   _buildMenuItem("Contact"),
@@ -106,17 +107,28 @@ class _HomePageMobileState extends State<HomePageMobile> {
 
                   /// 🔹 Footer
                   Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Text(
-                      "© 2025 Coastline Construction",
-                      style: GoogleFonts.b612(color: Colors.white70, fontSize: 12,decoration: TextDecoration.none),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Text(
-                      "Developed Coastline Construction & Marine Services",
-                      style: GoogleFonts.b612(color: Colors.white70, fontSize: 12, decoration: TextDecoration.none),
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        Text(
+                          "© 2025 Coastline Construction",
+                          style: GoogleFonts.b612(
+                            color: Colors.white70,
+                            fontSize: 12,
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Text(
+                          "Developed by Coastline Construction & Marine Services",
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.b612(
+                            color: Colors.white70,
+                            fontSize: 12,
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -126,16 +138,14 @@ class _HomePageMobileState extends State<HomePageMobile> {
         );
       },
       transitionBuilder: (context, anim1, anim2, child) {
-        return SlideTransition(
-          position: Tween<Offset>(
-            begin: const Offset(1, 0), // slide in from right
-            end: Offset.zero,
-          ).animate(anim1),
+        return FadeTransition(
+          opacity: anim1,
           child: child,
         );
       },
     );
   }
+
 
   Widget _buildMenuItem(String title) {
     return Padding(
@@ -146,7 +156,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
           // 🔹 TODO: trigger scrollToSection from parent
         },
         child: Align(
-          alignment: Alignment.centerLeft,
+          alignment: Alignment.center,
           child: Text(
             title.toUpperCase(),
             style: GoogleFonts.b612(
@@ -174,10 +184,10 @@ class _HomePageMobileState extends State<HomePageMobile> {
             child: FittedBox(
               fit: BoxFit.cover, // cover full screen without black bars
               child: ClipRRect(
-                borderRadius: const BorderRadius.only(
-                  bottomLeft: Radius.circular(0),  // curve bottom-left
-                  bottomRight: Radius.circular(500), // curve bottom-right
-                ),
+                // borderRadius: const BorderRadius.only(
+                //   bottomLeft: Radius.circular(0),  // curve bottom-left
+                //   bottomRight: Radius.circular(500), // curve bottom-right
+                // ),
                 child: SizedBox(
                   width: _controller.value.size.width,
                   height: _controller.value.size.height,
@@ -190,21 +200,66 @@ class _HomePageMobileState extends State<HomePageMobile> {
 
           /// 🔹 Company name in center
           Center(
-            child: Text(
-              "Coastline Construction & Marine Services",
-              textAlign: TextAlign.center,
-              style: GoogleFonts.allan(
-                color: Colors.white,
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    blurRadius: 8,
-                    color: Colors.black54,
-                    offset: Offset(2, 2),
-                  )
-                ],
-              ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "WELCOME TO",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.abrilFatface(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 8,
+                        color: Colors.black54,
+                        offset: Offset(2, 2),
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20,),
+                AnimatedBuilder(
+                  animation: _controller,
+                  builder: (context, child) {
+                    return ShaderMask(
+                      shaderCallback: (bounds) {
+                        return LinearGradient(
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight,
+                          colors: const [
+                            Colors.white70,
+                            Colors.white,
+                            Colors.white,
+                          ],
+                          stops: [
+                            (_textAnimationController.value - 0.2).clamp(0.0, 1.0),
+                            _textAnimationController.value,
+                            (_textAnimationController.value + 0.2).clamp(0.0, 1.0),
+                          ],
+                        ).createShader(bounds);
+                      },
+                      child: Text(
+                        "Coastline diving & Engineering \nServices",
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.odibeeSans(
+                          color: Colors.white,
+                          fontSize: 75,
+                          fontWeight: FontWeight.bold,
+                          shadows: const [
+                            Shadow(
+                              blurRadius: 8,
+                              color: Colors.black54,
+                              offset: Offset(2, 2),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                )
+              ],
             ),
           ),
           /// 🔹 Menu button (top-right)
@@ -212,15 +267,15 @@ class _HomePageMobileState extends State<HomePageMobile> {
             top: 40,
             right: 20,
             child: IconButton(
-              icon: const Icon(Icons.menu, color: Colors.white, size: 30),
+              icon: const Icon(Icons.drag_handle_outlined, color: Colors.white, size: 50),
               onPressed: () => _openMenu(context),
             ),
           ),
 
           Positioned(
-            top: 550,
-            left: 210,
-            child: Image.asset("assets/images/coastlinedivinglogo.png", height: 250,)
+            top: 0,
+            right: 230,
+            child: Image.asset("assets/images/coastlinedivinglogo.png", height: 200, color: Colors.white,)
           ),
         ],
       ),

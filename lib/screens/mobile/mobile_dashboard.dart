@@ -1,4 +1,5 @@
 import 'package:coastlinedivingweb/screens/mobile/mobile_gallery_page.dart';
+import 'package:coastlinedivingweb/screens/mobile/what_we_do_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -87,7 +88,7 @@ class _MobileLayoutState extends State<MobileLayout> {
                       child: Column(
                         children: [
                           Container(
-                            height: size.height * 0.8,
+                            height: size.height * 1,
                             key: homeKey,
                             child: HomePageMobile()
                           ),
@@ -97,11 +98,11 @@ class _MobileLayoutState extends State<MobileLayout> {
                           ),
                           Container(
                               key: projectsKey,
-                              child: MobileGalleryPage()
+                              child: WhatWeDoPage()
                           ),
-                          Container(
-                            child: MobileFooterPage(),
-                          )
+                          // Container(
+                          //   child: MobileFooterPage(),
+                          // )
                         ],
                       ),
                     ),
