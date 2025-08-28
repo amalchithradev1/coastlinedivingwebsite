@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
+import 'contact_us_page.dart';
 import 'mobile_about_page.dart';
 import 'mobile_footer_page.dart';
 import 'mobile_home_page.dart';
@@ -100,9 +101,13 @@ class _MobileLayoutState extends State<MobileLayout> {
                               key: projectsKey,
                               child: WhatWeDoPage()
                           ),
-                          // Container(
-                          //   child: MobileFooterPage(),
-                          // )
+                          Container(
+                            key: contactKey,
+                            child: ContactUsPage(),
+                          ),
+                          Container(
+                            child: MobileFooterPage(),
+                          )
                         ],
                       ),
                     ),

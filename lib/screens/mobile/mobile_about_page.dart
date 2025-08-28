@@ -75,29 +75,21 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
               width: double.infinity,
               fit: BoxFit.cover,),
           ),
-
-          Align(
-            alignment: Alignment.centerRight,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 20),
-              child: SizedBox(
-                height: 30,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 5),
-                  ),
-                  child: Text("Know More   !", style: GoogleFonts.abel(
-                    fontSize: 12,
-                    height: 1.5,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                  ),
+          Center(
+            child: Container(
+              height: 30,
+              width: 150,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black54, width: 0.7),
+                borderRadius: BorderRadius.all(Radius.circular(20.0))
+              ),
+              child: Center(
+                child: Text("Know More   !", style: GoogleFonts.abel(
+                  fontSize: 12,
+                  height: 1.5,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
                 ),
               ),
             ),
@@ -137,28 +129,21 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
             ),
           ),
 
-          Align(
-            alignment: Alignment.centerRight,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 10),
-              child: SizedBox(
-                height: 30,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 5),
-                  ),
-                  child: Text("Know More   !", style: GoogleFonts.abel(
-                    fontSize: 12,
-                    height: 1.5,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                  ),
+          Center(
+            child: Container(
+              height: 30,
+              width: 150,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black54, width: 0.7),
+                  borderRadius: BorderRadius.all(Radius.circular(20.0))
+              ),
+              child: Center(
+                child: Text("Know More   !", style: GoogleFonts.abel(
+                  fontSize: 12,
+                  height: 1.5,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
                 ),
               ),
             ),
@@ -198,28 +183,21 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
             ),
           ),
 
-          Align(
-            alignment: Alignment.centerRight,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 10),
-              child: SizedBox(
-                height: 30,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 5),
-                  ),
-                  child: Text("Know More   !", style: GoogleFonts.abel(
-                    fontSize: 12,
-                    height: 1.5,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                  ),
+          Center(
+            child: Container(
+              height: 30,
+              width: 150,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black54, width: 0.7),
+                  borderRadius: BorderRadius.all(Radius.circular(20.0))
+              ),
+              child: Center(
+                child: Text("Know More   !", style: GoogleFonts.abel(
+                  fontSize: 12,
+                  height: 1.5,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
                 ),
               ),
             ),
@@ -260,28 +238,21 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
             ),
           ),
 
-          Align(
-            alignment: Alignment.centerRight,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 10),
-              child: SizedBox(
-                height: 30,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 5),
-                  ),
-                  child: Text("Know More   !", style: GoogleFonts.abel(
-                    fontSize: 12,
-                    height: 1.5,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                  ),
+          Center(
+            child: Container(
+              height: 30,
+              width: 150,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black54, width: 0.7),
+                  borderRadius: BorderRadius.all(Radius.circular(20.0))
+              ),
+              child: Center(
+                child: Text("Know More   !", style: GoogleFonts.abel(
+                  fontSize: 12,
+                  height: 1.5,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
                 ),
               ),
             ),

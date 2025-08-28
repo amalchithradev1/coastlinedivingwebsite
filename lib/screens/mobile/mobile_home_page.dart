@@ -206,10 +206,26 @@ class _HomePageMobileState extends State<HomePageMobile> with SingleTickerProvid
                 Text(
                   "WELCOME TO",
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.abrilFatface(
+                  style: GoogleFonts.b612(
                     color: Colors.white,
                     fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w300,
+                    shadows: [
+                      Shadow(
+                        blurRadius: 8,
+                        color: Colors.black54,
+                        offset: Offset(2, 2),
+                      )
+                    ],
+                  ),
+                ),
+                Text(
+                  "COASTLINE",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.fanwoodText(
+                    color: Colors.white,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
                     shadows: [
                       Shadow(
                         blurRadius: 8,
@@ -241,12 +257,12 @@ class _HomePageMobileState extends State<HomePageMobile> with SingleTickerProvid
                         ).createShader(bounds);
                       },
                       child: Text(
-                        "Coastline diving & Engineering \nServices",
+                        "Diving & Engineering \nServices",
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.odibeeSans(
+                        style: GoogleFonts.b612(
                           color: Colors.white,
-                          fontSize: 75,
-                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
                           shadows: const [
                             Shadow(
                               blurRadius: 8,

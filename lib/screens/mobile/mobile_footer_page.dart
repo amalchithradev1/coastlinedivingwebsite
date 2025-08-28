@@ -15,7 +15,7 @@ class _MobileFooterPageState extends State<MobileFooterPage> {
       width: double.infinity,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Colors.green, Colors.greenAccent],
+          colors: [Colors.white, Colors.white],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -24,7 +24,7 @@ class _MobileFooterPageState extends State<MobileFooterPage> {
       child: Text(
         "© 2025 Coastline Construction & Marine Services.\nAll Rights Reserved.",
         textAlign: TextAlign.center,
-        style: GoogleFonts.b612(color: Colors.white70, fontSize: 12),
+        style: GoogleFonts.b612(color: Colors.black54, fontSize: 12),
       ),
     );
   }
