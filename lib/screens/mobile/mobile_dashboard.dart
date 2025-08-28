@@ -5,10 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
+import 'area_of_experience.dart';
 import 'contact_us_page.dart';
 import 'mobile_about_page.dart';
 import 'mobile_footer_page.dart';
 import 'mobile_home_page.dart';
+import 'our_clients.dart';
 
 
 class MobileLayout extends StatefulWidget {
@@ -100,6 +102,12 @@ class _MobileLayoutState extends State<MobileLayout> {
                           Container(
                               key: projectsKey,
                               child: WhatWeDoPage()
+                          ),
+                          Container(
+                            child: AreaOfExperience(),
+                          ),
+                          Container(
+                            child: OurClientsPage(),
                           ),
                           Container(
                             key: contactKey,

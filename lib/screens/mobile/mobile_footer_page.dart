@@ -22,7 +22,7 @@ class _MobileFooterPageState extends State<MobileFooterPage> {
       ),
       padding: const EdgeInsets.all(15),
       child: Text(
-        "© 2025 Coastline Construction & Marine Services.\nAll Rights Reserved.",
+        "© 2025 COASTLINE Diving & Engineering Services\nAll Rights Reserved.",
         textAlign: TextAlign.center,
         style: GoogleFonts.b612(color: Colors.black54, fontSize: 12),
       ),

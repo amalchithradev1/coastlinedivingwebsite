@@ -69,7 +69,7 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
             ),
           ),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Image.asset(
               "assets/images/coastlinedivingfour.jpg", height: 500,
               width: double.infinity,
@@ -94,11 +94,8 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Divider(),
-          ),
 
+          SizedBox(height: 30,),
 
 
           Center(
@@ -147,10 +144,6 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Divider(),
           ),
 
 
@@ -201,10 +194,6 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Divider(),
           ),
 
 

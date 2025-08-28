@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactUsPage extends StatefulWidget {
@@ -89,23 +90,35 @@ class _ContactUsPageState extends State<ContactUsPage> {
                 ],
               ),
               clipBehavior: Clip.hardEdge,
-              child: GoogleMap(
-                initialCameraPosition: const CameraPosition(
-                  target: LatLng(8.088909, 77.556320),
-                  zoom: 14,
+              child: FlutterMap(
+                options: MapOptions(
+                  initialCenter: const LatLng(8.088909, 77.556320),
+                  initialZoom: 14,
                 ),
-                markers: {
-                  const Marker(
-                    markerId: MarkerId("kanniyakumari"),
-                    position: LatLng(8.088909, 77.556320),
-                    infoWindow:
-                    InfoWindow(title: "Kanniyakumari, Tamil Nadu"),
+                children: [
+                  TileLayer(
+                    urlTemplate: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+                    subdomains: ['a', 'b', 'c', 'd'],
+                    retinaMode: true,
+                    userAgentPackageName: "com.example.coastlinedivingweb",
                   ),
-                },
-                zoomControlsEnabled: false,
-                myLocationButtonEnabled: false,
+                  MarkerLayer(
+                    markers: [
+                      Marker(
+                        point: const LatLng(8.088909, 77.556320),
+                        width: 80,
+                        height: 80,
+                        child: const Icon(
+                          Icons.location_on,
+                          color: Colors.red,
+                          size: 40,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-            ),
+            )
           ],
         ),
       ),

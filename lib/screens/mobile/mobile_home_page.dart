@@ -99,8 +99,8 @@ class _HomePageMobileState extends State<HomePageMobile> with SingleTickerProvid
                   _buildMenuItem("Home"),
                   _buildMenuItem("About"),
                   _buildMenuItem("What we Do"),
-                  _buildMenuItem("Courses"),
-                  _buildMenuItem("Gallery"),
+                  _buildMenuItem("Area of Experience"),
+                  _buildMenuItem("Our Clients"),
                   _buildMenuItem("Contact"),
 
                   const Spacer(),
@@ -120,7 +120,7 @@ class _HomePageMobileState extends State<HomePageMobile> with SingleTickerProvid
                         ),
                         const SizedBox(height: 5),
                         Text(
-                          "Developed by Coastline Construction & Marine Services",
+                          "Developed by Coastline Diving & Engineering Services",
                           textAlign: TextAlign.center,
                           style: GoogleFonts.b612(
                             color: Colors.white70,
