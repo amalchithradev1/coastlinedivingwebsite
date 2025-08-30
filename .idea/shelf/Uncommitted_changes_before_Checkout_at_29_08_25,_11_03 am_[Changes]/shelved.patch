@@ -1,0 +1,73 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"NONE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8a2ccab0-075c-4f2b-983b-f097f8e8bb48\" name=\"Changes\" comment=\"commit v1.0.1\">\n      <change afterPath=\"$PROJECT_DIR$/assets/images/coastlinedivingseven.jpg\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/assets/images/sriselvavinayagalogo.jpg\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/assets/images/vmandcologo.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/lib/screens/mobile/area_of_experience.dart\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/lib/screens/mobile/our_clients.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.dart_tool/package_config.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.dart_tool/package_config.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.dart_tool/package_config_subset\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.dart_tool/package_config_subset\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.dart_tool/package_graph.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.dart_tool/package_graph.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.flutter-plugins-dependencies\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.flutter-plugins-dependencies\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/lib/screens/mobile/contact_us_page.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib/screens/mobile/contact_us_page.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_about_page.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_about_page.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_dashboard.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_dashboard.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_footer_page.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_footer_page.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_home_page.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib/screens/mobile/mobile_home_page.dart\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/pubspec.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pubspec.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/pubspec.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pubspec.yaml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Dart File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;amalchithradev1&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/amalchithradev1/coastlinedivingwebsite.git&quot;,\n    &quot;accountId&quot;: &quot;d2a08459-f795-47db-97bf-98fdc8ca5eaa&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 7\n}</component>\n  <component name=\"ProjectId\" id=\"31twgkJ2jtiKs2VNo3mKCSIgJhv\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Flutter.main.dart.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.cidr.known.project.marker\": \"true\",\n    \"RunOnceActivity.readMode.enableVisualFormatting\": \"true\",\n    \"cf.first.check.clang-format\": \"false\",\n    \"cidr.known.project.marker\": \"true\",\n    \"dart.analysis.tool.window.visible\": \"false\",\n    \"git-widget-placeholder\": \"main\",\n    \"io.flutter.reload.alreadyRun\": \"true\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/Users/amals/StudioProjects/coastlinedivingwebsite/assets/images\",\n    \"show.migrate.to.gradle.popup\": \"false\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/assets/images\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"main.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\">\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/lib/main.dart\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8a2ccab0-075c-4f2b-983b-f097f8e8bb48\" name=\"Changes\" comment=\"\" />\n      <created>1756356789529</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1756356789529</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"commit v1.0.0\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1756361301157</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1756361301157</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"commit v1.0.1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1756361784160</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1756361784160</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"commit v1.0.0\" />\n    <MESSAGE value=\"commit v1.0.1\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"commit v1.0.1\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision af2c5f73396877d6b01a2fbb5f7a10947c7ed3cd)
++++ b/.idea/workspace.xml	(date 1756373707546)
+@@ -4,27 +4,7 @@
+     <option name="autoReloadType" value="NONE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8a2ccab0-075c-4f2b-983b-f097f8e8bb48" name="Changes" comment="commit v1.0.1">
+-      <change afterPath="$PROJECT_DIR$/assets/images/coastlinedivingseven.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/assets/images/sriselvavinayagalogo.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/assets/images/vmandcologo.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/screens/mobile/area_of_experience.dart" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/lib/screens/mobile/our_clients.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_graph.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib/screens/mobile/contact_us_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mobile/contact_us_page.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib/screens/mobile/mobile_about_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mobile/mobile_about_page.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib/screens/mobile/mobile_dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mobile/mobile_dashboard.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib/screens/mobile/mobile_footer_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mobile/mobile_footer_page.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib/screens/mobile/mobile_home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/mobile/mobile_home_page.dart" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+-    </list>
++    <list default="true" id="8a2ccab0-075c-4f2b-983b-f097f8e8bb48" name="Changes" comment="commit v1.0.2" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -72,7 +52,7 @@
+     "cf.first.check.clang-format": "false",
+     "cidr.known.project.marker": "true",
+     "dart.analysis.tool.window.visible": "false",
+-    "git-widget-placeholder": "main",
++    "git-widget-placeholder": "releasewebversion1",
+     "io.flutter.reload.alreadyRun": "true",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "/Users/amals/StudioProjects/coastlinedivingwebsite/assets/images",
+@@ -115,7 +95,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1756361784160</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="commit v1.0.2">
++      <option name="closed" value="true" />
++      <created>1756372974565</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1756372974565</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -132,6 +120,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="commit v1.0.0" />
+     <MESSAGE value="commit v1.0.1" />
+-    <option name="LAST_COMMIT_MESSAGE" value="commit v1.0.1" />
++    <MESSAGE value="commit v1.0.2" />
++    <option name="LAST_COMMIT_MESSAGE" value="commit v1.0.2" />
+   </component>
+ </project>
+\ No newline at end of file
