@@ -53,7 +53,7 @@ class _OurClientsPageState extends State<OurClientsPage> {
             itemBuilder: (context, index) {
               final client = clients[index];
               return Container(
-                width: 185,
+                width: MediaQuery.of(context).size.width * 0.45,
                 margin: const EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),

@@ -66,11 +66,14 @@ class _HomePageMobileState extends State<HomePageMobile> with SingleTickerProvid
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   /// 🔹 Close button
-                  Align(
-                    alignment: Alignment.topRight,
-                    child: IconButton(
-                      icon: const Icon(Icons.close, color: Colors.white, size: 50),
-                      onPressed: () => Navigator.pop(context),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 18.0),
+                    child: Align(
+                      alignment: Alignment.topRight,
+                      child: IconButton(
+                        icon: const Icon(Icons.close, color: Colors.white, size: 50),
+                        onPressed: () => Navigator.pop(context),
+                      ),
                     ),
                   ),
                   const SizedBox(height: 30),

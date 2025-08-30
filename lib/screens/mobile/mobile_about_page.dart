@@ -216,7 +216,7 @@ class _MobileAboutPageState extends State<MobileAboutPage> with SingleTickerProv
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               child: Text(
-                "Navigate excellence with Seafolk. India's diving experts offer unparalleled solutions for shipping – efficient, safe, and compliant underwater services.",
+                "Our diving experts offer unparalleled solutions for shipping – efficient, safe, and compliant underwater services.",
                 textAlign: TextAlign.center,
                 style: GoogleFonts.abel(
                   fontSize: 18,

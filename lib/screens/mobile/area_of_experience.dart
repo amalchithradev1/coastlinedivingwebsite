@@ -31,14 +31,14 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
           ),
           SizedBox(height: 20,),
           Container(
-            height: 180,
+            height: 280,
             margin: const EdgeInsets.symmetric(horizontal: 10),
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
+                  color: Colors.grey.shade200,
                   blurRadius: 8,
                   offset: const Offset(3, 4),
                 ),
@@ -50,23 +50,21 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Icon(
-                      Icons.directions_boat_filled,
-                      color: Colors.indigo,
-                      size: 40,
+                  Flexible(
+                    flex:4,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Image.asset("assets/images/areaofexperienceone.jpg", height: double.infinity,fit: BoxFit.cover,)
                     ),
                   ),
 
                   const SizedBox(width: 16),
 
-                  Expanded(
+                  Flexible(
+                    flex: 6,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +79,7 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          "We provide complete underwater services for all types of vessels, barges, rigs, floaters and fixed platforms.",
+                          "We provide comprehensive underwater services for all types of vessels, barges, rigs, floaters, and fixed platforms. Backed by skilled diving professionals and advanced equipment, we deliver reliable solutions of marine and offshore operations.",
                           textAlign: TextAlign.start,
                           style: GoogleFonts.abel(
                             fontSize: 15,
@@ -101,14 +99,14 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
 
           SizedBox(height: 20,),
           Container(
-            height: 240,
+            height: 260,
             margin: const EdgeInsets.symmetric(horizontal: 10),
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
+                  color: Colors.grey.shade200,
                   blurRadius: 8,
                   offset: const Offset(3, 4),
                 ),
@@ -120,23 +118,21 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Icon(
-                      Icons.handyman,
-                      color: Colors.indigo,
-                      size: 40,
+                  Flexible(
+                    flex: 4,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Image.asset("assets/images/areaofexperiencetwo.jpg", height: double.infinity,fit: BoxFit.cover,)
                     ),
                   ),
 
                   const SizedBox(width: 16),
 
-                  Expanded(
+                  Flexible(
+                    flex: 6,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -170,14 +166,14 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
 
           SizedBox(height: 20,),
           Container(
-            height: 240,
+            height: 260,
             margin: const EdgeInsets.symmetric(horizontal: 10),
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
+                  color: Colors.grey.shade200,
                   blurRadius: 8,
                   offset: const Offset(3, 4),
                 ),
@@ -189,23 +185,21 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Icon(
-                      Icons.settings,
-                      color: Colors.indigo,
-                      size: 40,
+                  Flexible(
+                    flex: 4,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Image.asset("assets/images/areaofexperiencethree.jpg", height: double.infinity,fit: BoxFit.cover,)
                     ),
                   ),
 
                   const SizedBox(width: 16),
 
-                  Expanded(
+                  Flexible(
+                    flex: 6,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -239,14 +233,14 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
 
           SizedBox(height: 20,),
           Container(
-            height: 350,
+            height: 280,
             margin: const EdgeInsets.symmetric(horizontal: 10),
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
+                  color: Colors.grey.shade200,
                   blurRadius: 8,
                   offset: const Offset(3, 4),
                 ),
@@ -258,23 +252,21 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Icon(
-                      Icons.search,
-                      color: Colors.indigo,
-                      size: 40,
+                  Flexible(
+                    flex: 4,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Image.asset("assets/images/areaofexperiencefour.jpg", height: double.infinity,fit: BoxFit.cover,)
                     ),
                   ),
 
                   const SizedBox(width: 16),
 
-                  Expanded(
+                  Flexible(
+                    flex: 6,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -289,7 +281,7 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          "Our specially qualified  Inspection team provide complete diving solution for all types of Underwater Survey, Engineering and Construction Work. We deploy team of very competent Diving personnel with Years of experience in subsea Engineering and Construction work. This helps our Esteemed Client to get a magnificent and excellent result. We deliver a Paramount work completion to our Client for all the subsea Engineering and Construction work related to Diving operations.",
+                          "Our qualified inspection team provides complete diving solutions for underwater surveys, engineering, and construction. With highly experienced diving personnel, we ensure safe, efficient, and excellent results, delivering reliable completion for all subsea projects.",
                           textAlign: TextAlign.start,
                           style: GoogleFonts.abel(
                             fontSize: 15,
@@ -308,14 +300,14 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
 
           SizedBox(height: 20,),
           Container(
-            height: 240,
+            height: 260,
             margin: const EdgeInsets.symmetric(horizontal: 10),
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black26,
+                  color: Colors.grey.shade200,
                   blurRadius: 8,
                   offset: const Offset(3, 4),
                 ),
@@ -327,23 +319,21 @@ class _AreaOfExperienceState extends State<AreaOfExperience> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Icon(
-                      Icons.scuba_diving,
-                      color: Colors.indigo,
-                      size: 40,
+                  Flexible(
+                    flex: 4,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Image.asset("assets/images/areaofexperiencefive.jpg", height: double.infinity,fit: BoxFit.cover,)
                     ),
                   ),
 
                   const SizedBox(width: 16),
 
-                  Expanded(
+                  Flexible(
+                    flex: 6,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,

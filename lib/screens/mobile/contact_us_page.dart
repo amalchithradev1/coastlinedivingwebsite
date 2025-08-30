@@ -54,6 +54,13 @@ class _ContactUsPageState extends State<ContactUsPage> {
             // Phone 2
             _buildContactRow(
               icon: Icons.call,
+              text: "+91 9633544793" ,
+              onTap: () => _launchUrl("tel:+916379281896"),
+            ),
+
+            // Phone 3
+            _buildContactRow(
+              icon: Icons.call,
               text: "+91 8129240852",
               onTap: () => _launchUrl("tel:+918129240852"),
             ),
